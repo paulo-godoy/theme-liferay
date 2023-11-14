@@ -1,10 +1,10 @@
 async function callUnsplash() {
   try {
     const response = await fetch(
-      "https://api.unsplash.com/photos/random?client_id=ndVHCZ2WFL6-YLM5ONNLWx1E5SmrWVYi3DcKITFZxBs",
+      "https://api.unsplash.com/photos/random?client_id=sua_chave_aqui",
       {
         headers: {
-          Authorization: "Bearer ndVHCZ2WFL6-YLM5ONNLWx1E5SmrWVYi3DcKITFZxBs",
+          Authorization: "Bearer sua_chave_aqui",
         },
       }
     );

@@ -1,0 +1,14 @@
+.accordion {
+  &-button {
+    background-color: aqua !important;
+
+    &:focus {
+      border-color: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &-body {
+    background-color: azure !important;
+  }
+}
