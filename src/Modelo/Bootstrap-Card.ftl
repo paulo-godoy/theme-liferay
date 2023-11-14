@@ -1,8 +1,8 @@
 <#if Fieldset61044783.getSiblings()?has_content>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="row justify-content-center">
         <#list Fieldset61044783.getSiblings() as cur_Fieldset61044783>
-            <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
                     <#if cur_Fieldset61044783.Image66540021.getData()??>
                         <img class="card-img-top" alt="${cur_Fieldset61044783.Image66540021.getAttribute("alt")}" data-fileentryid="${cur_Fieldset61044783.Image66540021.getAttribute("fileEntryId")}" src="${cur_Fieldset61044783.Image66540021.getData()}">
                     </#if>
@@ -24,3 +24,4 @@
         </#list>
     </div>
 </#if>
+
