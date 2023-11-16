@@ -9,7 +9,7 @@
     <#if Fieldset61255941.getSiblings()?has_content>
       <#list Fieldset61255941.getSiblings() as cur_Fieldset61255941>
         <div class="carousel-item<#if cur_Fieldset61255941?index == 0> active</#if>">
-          <#if cur_Fieldset61255941.Image47453927.getData()?has_content && cur_Fieldset61255941.Image47453927.getData() &&>
+          <#if cur_Fieldset61255941.Image47453927.getData()?has_content && cur_Fieldset61255941.Image47453927.getData() != "">
             <img class="d-block w-100" style="object-fit: cover;" alt="${cur_Fieldset61255941.Image47453927.getAttribute("alt")}" data-fileentryid="${cur_Fieldset61255941.Image47453927.getAttribute("fileEntryId")}" src="${cur_Fieldset61255941.Image47453927.getData()}" />
           </#if>
           <div class="carousel-caption d-none d-md-block">
