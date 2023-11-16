@@ -12,7 +12,7 @@
                         </#if>
                     </button>
                 </h2>
-                <div id="collapse${cur_Fieldset51216005_index}" class="accordion-collapse collapse show" aria-labelledby="heading${cur_Fieldset51216005_index}" data-bs-parent="#accordionExample_${Fieldset51216005.id?default('')}">
+                <div id="collapse${cur_Fieldset51216005_index}" class="accordion-collapse collapse" aria-labelledby="heading${cur_Fieldset51216005_index}" data-bs-parent="#accordionExample_${Fieldset51216005.id?default('')}">
                     <div class="accordion-body">
                         <strong>
                             <#if (cur_Fieldset51216005.Fieldset10039132.RichText37560603.getData())??>
