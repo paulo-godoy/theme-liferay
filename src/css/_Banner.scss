@@ -3,11 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  position: relative; /* Adiciona posição relativa ao elemento pai para controlar o posicionamento dos filhos */
 
   // Estilos para telas grandes
   @media (min-width: 992px) {
     background-image: url("../images/image-big.jpg");
     padding: 100px 0;
+    background-attachment: fixed; /* Adiciona o efeito parallax */
   }
 
   // Estilos para telas pequenas
