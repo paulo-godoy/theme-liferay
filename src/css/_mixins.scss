@@ -1,0 +1,30 @@
+@mixin margin-bottom($value) {
+  margin-bottom: $value;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin custom-padding($vertical, $horizontal) {
+  padding: $vertical $horizontal;
+}
+
+@mixin banner-common-styles {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+
+@mixin banner-large-screen-styles {
+  background-image: url("../images/image-big.jpg");
+  padding: 6.25rem 0;
+  background-attachment: fixed;
+}
+
+@mixin banner-small-screen-styles {
+  background-image: url("../images/image-small.jpg");
+  padding: 3.125rem 0;
+}
