@@ -1,35 +1,59 @@
-.banner {
+@mixin margin-bottom($value) {
+  margin-bottom: $value;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin custom-padding($vertical, $horizontal) {
+  padding: $vertical $horizontal;
+}
+
+@mixin banner-common-styles {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   position: relative;
+}
+
+@mixin banner-large-screen-styles {
+  background-image: url("../images/image-big.jpg");
+  padding: 6.25rem 0;
+  background-attachment: fixed;
+}
+
+@mixin banner-small-screen-styles {
+  background-image: url("../images/image-small.jpg");
+  padding: 3.125rem 0;
+}
+
+.banner {
+  @include banner-common-styles;
 
   // Estilos para telas grandes
   @media (min-width: 992px) {
-    background-image: url("../images/image-big.jpg");
-    padding: 100px 0;
-    background-attachment: fixed;
+    @include banner-large-screen-styles;
   }
 
   // Estilos para telas pequenas
   @media (max-width: 991px) {
-    background-image: url("../images/image-small.jpg");
-    padding: 50px 0;
+    @include banner-small-screen-styles;
   }
 
   h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    @include font-size(2.5rem);
+    @include margin-bottom(1.25rem);
   }
 
   p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    @include font-size(1.2rem);
+    @include margin-bottom(1.875rem);
   }
 
   button {
-    padding: 10px 20px;
-    font-size: 1.5em;
+    @include custom-padding(0.625rem, 1.25rem);
+    @include font-size(1.5rem);
   }
 }
