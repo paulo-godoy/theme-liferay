@@ -1,0 +1,20 @@
+.thumbnail-container {
+  width: 100px; /* Adjust the width as needed */
+  float: left;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.main-image {
+  float: left;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+}

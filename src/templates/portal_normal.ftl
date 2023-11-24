@@ -15,7 +15,8 @@
     <!-- Inclui o Slick Magnify CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.magnify/1.4.0/jquery.magnify.min.css"/>
+
+
 
     <@liferay_util["include"] page=top_head_include />
 </head>
@@ -86,12 +87,6 @@
 <!-- script JavaScript com a configuração do Slick Carousel -->
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-<!-- Inclui o Slick Magnify JS -->
-<script src="https://cdn.jsdelivr.net/jquery.magnify/1.4.0/jquery.magnify.min.js"></script>
-
-<!-- Inclui o seu script personalizado -->
-<script src="https://cdn.jsdelivr.net/magnify/2.0.0/js/jquery.magnify.js"></script>
-
 <script>
 $(document).ready(function () {
   $(".responsive").slick({
@@ -128,7 +123,6 @@ $(document).ready(function () {
       },
     ],
   });
-  $(".responsive img").magnify();
 });
 </script>
 
