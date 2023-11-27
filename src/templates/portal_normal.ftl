@@ -12,12 +12,7 @@
     <!-- Inclui o jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <!-- Inclui o Slick Magnify CSS -->
-    <#--  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>  -->
-
-
-
+   
     <@liferay_util["include"] page=top_head_include />
 </head>
 
