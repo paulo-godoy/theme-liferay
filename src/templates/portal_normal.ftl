@@ -11,6 +11,7 @@
 
     <!-- Inclui o jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
 
    
     <@liferay_util["include"] page=top_head_include />
@@ -81,46 +82,6 @@
 
 <!-- script JavaScript com a configuração do Slick Carousel -->
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-
-<script>
-$(document).ready(function () {
-  $(".responsive").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrows: true,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-});
-</script>
 
 </body>
 

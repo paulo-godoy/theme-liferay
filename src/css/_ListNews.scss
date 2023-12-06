@@ -1,0 +1,43 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  .card-body {
+    padding: 20px;
+    background-color: #f0f8ff;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+
+    .list-group-item {
+      border: none;
+    }
+  }
+}
+
+.custom-card {
+  background-color: #1a1a1a;
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+
+  .custom-card-title {
+    color: #4fa1f0;
+  }
+
+  .custom-list-group-item {
+    background-color: #333;
+
+    &:hover {
+      background-color: #555;
+      color: #fff;
+    }
+  }
+}
